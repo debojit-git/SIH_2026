@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthBridge - Public Healthcare Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">
+      <h1>Health<span>Bridge</span></h1>
+      <p class="tagline">Bridging the Gap, Bringing Healthcare Closer</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#consultation">Book Consultation</a></li>
+        <li><a href="#medicines">Medicine Availability</a></li>
+        <li><a href="#schemes">Govt Schemes</a></li>
+        <li><a href="#portals" class="btn-primary">Login Portals</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Accessible Healthcare for Every Citizen</h2>
+      <p>Connect with qualified doctors, check local medicine stocks, and discover government health benefits in your region.</p>
+      <div class="hero-buttons">
+        <a href="#consultation" class="btn-primary">Book Urgent Care</a>
+        <a href="#schemes" class="btn-secondary">Find Schemes</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Role-Based Login Portals -->
+  <section id="portals" class="container">
+    <h2 class="section-title">Select Access Portal</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Patient Portal</h3>
+        <p>Book appointments, view medical history, and check prescription status.</p>
+        <button class="btn-card">Patient Login</button>
+      </div>
+      <div class="card">
+        <h3>Healthcare Professionals</h3>
+        <p>Manage patient queues, access medical records, and update hospital bed status.</p>
+        <button class="btn-card">Staff Login</button>
+      </div>
+      <div class="card">
+        <h3>Visitor Portal</h3>
+        <p>Explore nearby public health centers (PHCs) and government health schemes.</p>
+        <button class="btn-card">Visitor Access</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consultation Booking Form -->
+  <section id="consultation" class="container bg-light">
+    <h2 class="section-title">Book a Consultation</h2>
+    <form class="health-form">
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" placeholder="Enter full name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="location">Current Location / District</label>
+        <input type="text" id="location" placeholder="e.g., Bankura, West Bengal" required>
+      </div>
+
+      <div class="form-group">
+        <label for="urgency">Condition Level</label>
+        <select id="urgency" required>
+          <option value="standard">Standard / Regular Checkup</option>
+          <option value="immediate">Immediate Attention / Emergency Priority</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="records">Previous Treatment / Medical Notes (Optional)</label>
+        <textarea id="records" rows="3" placeholder="Briefly describe symptoms or past treatments"></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">Submit Consultation Request</button>
+    </form>
+  </section>
+
+  <!-- Medicine Search Module -->
+  <section id="medicines" class="container">
+    <h2 class="section-title">Check Medicine Availability</h2>
+    <div class="search-box">
+      <input type="text" placeholder="Search by common name, generic name, or chemical composition...">
+      <button class="btn-primary">Search Stock</button>
+    </div>
+    <div class="table-responsive">
+      <table>
+        <thead>
+          <tr>
+            <th>Medicine Name</th>
+            <th>Generic Name / Composition</th>
+            <th>Status</th>
+            <th>Facility Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Paracetamol 500mg</td>
+            <td>Acetaminophen</td>
+            <td><span class="badge in-stock">In Stock</span></td>
+            <td>District PHC Center #1</td>
+          </tr>
+          <tr>
+            <td>Amoxicillin 250mg</td>
+            <td>Amoxicillin Trihydrate</td>
+            <td><span class="badge out-of-stock">Out of Stock</span></td>
+            <td>Sub-District Hospital</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Government Scheme Search Module -->
+  <section id="schemes" class="container bg-light">
+    <h2 class="section-title">Government Healthcare Schemes</h2>
+    <div class="search-box">
+      <input type="text" placeholder="Filter schemes by health need or location...">
+      <button class="btn-secondary">Find Schemes</button>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Ayushman Bharat (PM-JAY)</h3>
+        <p>Provides health coverage up to ₹5 lakh per family per year for secondary and tertiary care hospitalization.</p>
+      </div>
+      <div class="card">
+        <h3>National Health Mission (NHM)</h3>
+        <p>Supports accessible and affordable healthcare services in rural and underserved regions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 HealthBridge | Team FreshTech (SIH 2026)</p>
+  </footer>
+
+</body>
+</html>
